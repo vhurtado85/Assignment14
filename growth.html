@@ -1,0 +1,397 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Growth</title>
+
+<link rel="stylesheet" type="text/css" href="externalstyles.css" />
+
+<div class="link"> </div>
+
+<style>
+.mario {
+width: 5px;
+height: 5px;
+box-shadow: 0px 0px 0px transparent, 130px 5px #ffa500, 135px 5px #ffa500,
+140px 5px #ffa500, 95px 10px #de4513, 100px 10px #de4513, 105px 10px #de4513,
+110px 10px #de4513, 115px 10px #de4513, 130px 10px #ffa500,
+135px 10px #ffa500, 140px 10px #ffa500, 90px 15px #de4513, 95px 15px #de4513,
+100px 15px #de4513, 105px 15px #de4513, 110px 15px #de4513,
+115px 15px #de4513, 120px 15px #de4513, 125px 15px #de4513,
+130px 15px #de4513, 135px 15px #ffa500, 140px 15px #ffa500,
+90px 20px #a52a2a, 95px 20px #a52a2a, 100px 20px #a52a2a, 105px 20px #ffa500,
+110px 20px #ffa500, 115px 20px #000, 120px 20px #ffa500, 130px 20px #4545bb,
+135px 20px #4545bb, 140px 20px #4545bb, 85px 25px #a52a2a, 90px 25px #ffa500,
+95px 25px #a52a2a, 100px 25px #ffa500, 105px 25px #ffa500,
+110px 25px #ffa500, 115px 25px #000, 120px 25px #ffa500, 125px 25px #ffa500,
+130px 25px #4545bb, 135px 25px #4545bb, 140px 25px #4545bb,
+85px 30px #a52a2a, 90px 30px #ffa500, 95px 30px #a52a2a, 100px 30px #a52a2a,
+105px 30px #ffa500, 110px 30px #ffa500, 115px 30px #ffa500,
+120px 30px #a52a2a, 125px 30px #ffa500, 130px 30px #ffa500,
+135px 30px #ffa500, 140px 30px #4545bb, 85px 35px #a52a2a, 90px 35px #a52a2a,
+95px 35px #ffa500, 100px 35px #ffa500, 105px 35px #ffa500,
+110px 35px #ffa500, 115px 35px #a52a2a, 120px 35px #a52a2a,
+125px 35px #a52a2a, 130px 35px #a52a2a, 135px 35px #a52a2a,
+95px 40px #ffa500, 100px 40px #ffa500, 105px 40px #ffa500,
+110px 40px #ffa500, 115px 40px #ffa500, 120px 40px #ffa500,
+125px 40px #ffa500, 130px 40px #4545bb, 75px 45px #4545bb, 80px 45px #4545bb,
+85px 45px #4545bb, 90px 45px #4545bb, 95px 45px #4545bb, 100px 45px #de4513,
+105px 45px #4545bb, 110px 45px #4545bb, 115px 45px #4545bb,
+120px 45px #de4513, 125px 45px #4545bb, 70px 50px #4545bb, 75px 50px #4545bb,
+80px 50px #4545bb, 85px 50px #4545bb, 90px 50px #4545bb, 95px 50px #4545bb,
+100px 50px #4545bb, 105px 50px #de4513, 110px 50px #4545bb,
+115px 50px #4545bb, 120px 50px #4545bb, 125px 50px #de4513, 140px 50px #000,
+65px 55px #ffa500, 70px 55px #ffa500, 75px 55px #4545bb, 80px 55px #4545bb,
+85px 55px #4545bb, 90px 55px #4545bb, 95px 55px #4545bb, 100px 55px #4545bb,
+105px 55px #de4513, 110px 55px #de4513, 115px 55px #de4513,
+120px 55px #de4513, 125px 55px #de4513, 140px 55px #000, 65px 60px #ffa500,
+70px 60px #ffa500, 75px 60px #ffa500, 85px 60px #de4513, 90px 60px #de4513,
+95px 60px #4545bb, 100px 60px #de4513, 105px 60px #de4513, 110px 60px #ff0,
+115px 60px #de4513, 120px 60px #de4513, 125px 60px #ff0, 130px 60px #de4513,
+135px 60px #000, 140px 60px #000, 70px 65px #ffa500, 80px 65px #000,
+85px 65px #de4513, 90px 65px #de4513, 95px 65px #de4513, 100px 65px #de4513,
+105px 65px #de4513, 110px 65px #de4513, 115px 65px #de4513,
+120px 65px #de4513, 125px 65px #de4513, 130px 65px #de4513, 135px 65px #000,
+140px 65px #000, 75px 70px #000, 80px 70px #000, 85px 70px #000,
+90px 70px #de4513, 95px 70px #de4513, 100px 70px #de4513, 105px 70px #de4513,
+110px 70px #de4513, 115px 70px #de4513, 120px 70px #de4513,
+125px 70px #de4513, 130px 70px #de4513, 135px 70px #000, 140px 70px #000,
+70px 75px #000, 75px 75px #000, 80px 75px #000, 85px 75px #de4513,
+90px 75px #de4513, 95px 75px #de4513, 100px 75px #de4513, 105px 75px #de4513,
+110px 75px #de4513, 115px 75px #de4513, 70px 80px #000, 85px 80px #de4513,
+90px 80px #de4513, 95px 80px #de4513;
+animation: jump 2s linear infinite;
+}
+@keyframes jump {
+0%,
+100% {
+transform: translateY(20px);
+}
+50% {
+transform: translateY(100px);
+}
+}
+</style>
+<title>Salow Studios</title>
+</head>
+<body>
+<div class="mario"></div>
+</body>
+</html>
+</head>
+
+<body>
+
+<header style="text-align: center">
+	<img src="journey.jpg" width="434" height="130" alt="journey logo" style="box-shadow: 10px 10px 12px #888888" />
+</header>
+
+<br /><table align="center" class="menu" style="border-style: none">
+	<tr>
+		<td class="menuicon"><a href="index.html"><img src="home.gif" width="50" height="21" alt="Home" /></a></td>
+		<td class="menupipe">|</td>
+		<td class="menuicon"><a href="growth.html"><img src="growth.gif" width="50" height="21" alt="Growth" /></a></td>
+		<td class="menupipe">|</td>
+		<td class="menuicon"><a href="curiosity.html"><img src="curiosity.gif" width="50" height="21" alt="curiosity" /></a></td>
+		<td class="menupipe">|</td>
+		<td class="menuicon"><a href="failure.html"><img src="failure.gif" width="50" height="21" alt="failure" /></a></td>
+	</tr>
+</table>
+
+<h1> Welcome to the Growth page! </h1>
+
+
+<table align="center" class="menu" style="padding: 15px; text-align: center" width="50%">
+	<tr>
+		<td>
+
+		Growth mindset is the belief that your abilities and intelligence can be developed through hard work, dedication, and a willingness to learn. By embracing a growth mindset, you can unlock your full potential and achieve your goals.
+		<br>
+		<br>
+		On this page, you'll find resources to help you develop a growth mindset, including:
+		<br>
+		<br>
+		Whether you're a student, professional, or entrepreneur, developing a growth mindset is essential for success. 
+		<br>
+		<br>
+		</tr>
+</table> 
+
+<br>
+<br>
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KUWn_TJTrnU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+<center>
+<div id="stage">
+  	<div id="dogIntro"></div>
+	
+		<input type="checkbox" id="d1" />
+		<input type="checkbox" id="bc1-1" />
+		<input type="checkbox" id="bc1-2" />
+		<input type="checkbox" id="bc1-3" />
+		
+		<input type="checkbox" id="d2" />
+		<input type="checkbox" id="bc2-1" />
+		<input type="checkbox" id="bc2-2" />
+		<input type="checkbox" id="bc2-3" />
+		
+		<input type="checkbox" id="d3" />
+		<input type="checkbox" id="bc3-1" />
+		<input type="checkbox" id="bc3-2" />
+		<input type="checkbox" id="bc3-3" />
+		
+		<input type="checkbox" id="d4" />
+		<input type="checkbox" id="bc4-1" />
+		<input type="checkbox" id="bc4-2" />
+		<input type="checkbox" id="bc4-3" />
+		
+		<input type="checkbox" id="d5" />
+		<input type="checkbox" id="bc5-1" />
+		<input type="checkbox" id="bc5-2" />
+		<input type="checkbox" id="bc5-3" />
+		
+		<input type="checkbox" id="d6" />
+		<input type="checkbox" id="bc6-1" />
+		<input type="checkbox" id="bc6-2" />
+		<input type="checkbox" id="bc6-3" />
+		
+		<input type="checkbox" id="d7" />
+		<input type="checkbox" id="bc7-1" />
+		<input type="checkbox" id="bc7-2" />
+		<input type="checkbox" id="bc7-3" />
+		
+		<input type="checkbox" id="d8" />
+		<input type="checkbox" id="bc8-1" />
+		<input type="checkbox" id="bc8-2" />
+		<input type="checkbox" id="bc8-3" />
+		
+		<input type="checkbox" id="d9" />
+		<input type="checkbox" id="bc9-1" />
+		<input type="checkbox" id="bc9-2" />
+		<input type="checkbox" id="bc9-3" />
+		
+		<input type="checkbox" id="d10" />
+		<input type="checkbox" id="bc10-1" />
+		<input type="checkbox" id="bc10-2" />
+		<input type="checkbox" id="bc10-3" />
+
+		<div id="dogLaugh">
+			<div><span></span><span></span></div>
+			<div><span></span><span></span></div>
+			<div><span></span><span></span></div>
+			<div><span></span><span></span></div>
+			<div><span></span><span></span></div>
+			<div><span></span><span></span></div>
+			<div><span></span><span></span></div>
+			<div><span></span><span></span></div>
+			<div><span></span><span></span></div>
+			<div><span></span><span></span></div>
+			
+		</div>
+
+		
+		<div id="shootingArea">
+			<div>
+				<div>
+					<label for="bc1-1"></label>
+					<label for="bc1-2"></label>
+					<label for="bc1-3"></label>
+					<div>
+						<label for="d1"></label>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div>
+				<div>
+					<label for="bc2-1"></label>
+					<label for="bc2-2"></label>
+					<label for="bc2-3"></label>
+					<div>
+						<label for="d2"></label>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			
+			<div>
+				<div>
+					<label for="bc3-1"></label>
+					<label for="bc3-2"></label>
+					<label for="bc3-3"></label>
+					<div>
+						<label for="d3"></label>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			
+			<div>
+				<div>
+					<label for="bc4-1"></label>
+					<label for="bc4-2"></label>
+					<label for="bc4-3"></label>
+					<div>
+						<label for="d4"></label>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			
+			<div>
+				<div>
+					<label for="bc5-1"></label>
+					<label for="bc5-2"></label>
+					<label for="bc5-3"></label>
+					<div>
+						<label for="d5"></label>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			
+			<div>
+				<div>
+					<label for="bc6-1"></label>
+					<label for="bc6-2"></label>
+					<label for="bc6-3"></label>
+					<div>
+						<label for="d6"></label>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			
+			<div>
+				<div>
+					<label for="bc7-1"></label>
+					<label for="bc7-2"></label>
+					<label for="bc7-3"></label>
+					<div>
+						<label for="d7"></label>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			
+			<div>
+				<div>
+					<label for="bc8-1"></label>
+					<label for="bc8-2"></label>
+					<label for="bc8-3"></label>
+					<div>
+						<label for="d8"></label>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			
+			<div>
+				<div>
+					<label for="bc9-1"></label>
+					<label for="bc9-2"></label>
+					<label for="bc9-3"></label>
+					<div>
+						<label for="d9"></label>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			
+			<div>
+				<div>
+					<label for="bc10-1"></label>
+					<label for="bc10-2"></label>
+					<label for="bc10-3"></label>
+					<div>
+						<label for="d10"></label>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		
+		 
+		</div>
+		
+		
+		<div id="bullets" class="console">
+			<div>
+				<div><span></span><span></span><span></span></div>
+				<div><span></span><span></span><span></span></div>
+				<div><span></span><span></span><span></span></div>
+				<div><span></span><span></span><span></span></div>
+				<div><span></span><span></span><span></span></div>
+				<div><span></span><span></span><span></span></div>
+				<div><span></span><span></span><span></span></div>
+				<div><span></span><span></span><span></span></div>
+				<div><span></span><span></span><span></span></div>
+				<div><span></span><span></span><span></span></div>
+			</div>
+			
+			<span>SHOT</span>
+		</div>
+		
+		<div id="hits" class="console">
+			<span>HIT</span>
+			<div>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		
+		<div id="points" class="console">
+			<div class="pts1">
+				<div class="pts2">
+					<div class="pts3">
+						<div class="pts4">
+							<div class="pts5">
+								<div class="pts6">
+									<div class="pts7">
+										<div class="pts8">
+											<div class="pts9">
+												<div class="pts10">
+													<span>000000</span>
+													<span>001000</span>
+													<span>002000</span>
+													<span>003000</span>
+													<span>004000</span>
+													<span>005000</span>
+													<span>006000</span>
+													<span>007000</span>
+													<span>008000</span>
+													<span>009000</span>
+													<span>010000</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<span>SCORE</span>
+		</div>
+
+		
+
+	</div>
+</center>
+</body>
+
+</html>
